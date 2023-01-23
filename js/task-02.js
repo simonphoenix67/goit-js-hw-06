@@ -7,6 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 
+
 function addin(ingredients) {
     for (let i of ingredients) {
       const addList = document.createElement('li');
@@ -17,6 +18,6 @@ function addin(ingredients) {
     }
   
 }
-  
+
 
 addin(ingredients);

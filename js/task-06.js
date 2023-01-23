@@ -2,7 +2,8 @@
 const textInput = document.querySelector('#validation-input')
 
 textInput.addEventListener('blur', event => {
-  if (event.target.value.length == textInput.getAttribute('data-length')) {
+  
+  if (event.target.value.length === Number.parseInt(textInput.getAttribute('data-length'))) {
     
     textInput.classList.add('valid')
     
@@ -23,4 +24,5 @@ textInput.addEventListener('blur', event => {
 	}
 })
 
+console.log(textInput.getAttribute('data-length'))
 
